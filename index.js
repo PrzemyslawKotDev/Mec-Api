@@ -20,7 +20,7 @@ app.use(express.json());
 
 
 app.use('/api/auth', authRoute);
-app.use('/api/user', userRoute);
+app.use('/api/auth', userRoute);
 
 app.listen(process.env.PORT || 5000, (err)=>{
     if(err) console.log(err);
